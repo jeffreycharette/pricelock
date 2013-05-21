@@ -2,24 +2,94 @@
 
 <html>
 <head>
-	<title>Pricelock v1</title>
-</head>
-<body style="font-size:12px;">
-	
+<title>Pricelock v1</title>
 <style type="text/css">
 	@media only screen and (max-width: 480px) { 
-		table#header img {
+		table[id=header] img {
 			display: none !important;
 		}
-		table#header {
-			width: 382px !important;
-			background: url('images/header-mobile.gif') left top no-repeat !important;
+		table[id=header] {
+			width: 328px !important;
+			height: 112px !important;
+			background: url('images/header_mobile.gif') left top no-repeat !important;
 		}
-		table#container {
-			width: 287px !important;
+		table[id=container] {
+			width: 328px !important;
 		}
-		table#bodyupper_content {
-			width: 287px !important;
+		table[id=bodyupper] {
+			width: 328px !important;
+		}
+		table[id=bodyupper] td:first-child {
+			width: 6px !important;
+		}
+		table[id=bodyupper] td:last-child {
+			width: 4px !important;
+		}
+		table[id=bodyupper_content] {
+			width: 314px !important;
+		}
+		table[id=bodyupper_content] td:first-child {
+			width: 34px !important;
+		}
+		table[id=bodyupper_content] td:last-child {
+			width: 36px !important;
+		}
+		table[id=bodyupper_content] .bodycontent {
+			padding: 0 20px 20px 20px !important;
+			border-left: 4px solid #4464CF !important;
+		}
+		table[id=bodyupperfooter] img {
+			display: none !important;
+		}
+		table[id=bodyupperfooter] {
+			width: 328px !important;
+			height: 11px !important;
+			background: url('images/bodyborder_footer_mobile.gif') left top no-repeat !important;
+		}
+		table[id=bodylower] {
+			width: 328px !important;
+			background: none !important;
+		}
+		table[id=bodylower] td:first-child {
+			width: 6px !important;
+		}
+		table[id=bodylower] td:last-child {
+			width: 4px !important;
+		}
+		table[id=features] td:first-child {
+			width: 34px !important;
+		}
+		table[id=features] td:last-child {
+			width: 34px !important;
+		}
+		table[id=features] td.greendot {
+			width: 19px !important;
+		}
+		table[id=footerspacer] img {
+			display: none !important;
+		}
+		table[id=footerspacer] {
+			width: 328px !important;
+			height: 8px !important;
+			background: url('images/footer_spacer_mobile.gif') left top no-repeat !important;
+		}
+		table[id=footerbody] {
+			width: 328px !important;
+			background: none !important;
+		}
+		table[id=footerbody] td:first-child {
+			width: 6px !important;
+		}
+		table[id=footerbody] td:last-child {
+			width: 4px !important;
+		}
+		table[id=footer] img {
+			display: none !important;
+		}
+		table[id=footer] {
+			width: 328px !important;
+			height: 14px !important;
+			background: url('images/footer_mobile.gif') left top no-repeat !important;
 		}
 	}
 	
@@ -52,8 +122,6 @@
 	}
 	
 	table#bodylower {
-		/*padding-top: 20px;*/
-		height: auto;
 		background: url('images/body_noborder.gif') left top repeat-y;
 		text-align: center;
 	}
@@ -66,18 +134,6 @@
 		height: 37px;
 		background: url('images/footer.gif') left top no-repeat;
 	}
-	
-	p#features {
-		color: #777;
-		font-weight: bold;
-		border-left: none;
-		border-right: none;
-	}
-	
-	p#features img {
-		padding: 0 10px 3px 10px;
-	}
-	
 
 </style>
 <!--[if gte mso 9]>
@@ -86,6 +142,8 @@
 #savetext{width: 490px !important;}
 </style>
 <![endif]-->
+</head>
+<body style="font-size:12px;margin: 0;padding: 0;">
 <!-- Main Wrapper -->
 <!-- Start Container -->
 <table cellpadding="0" cellspacing="0" border="0" id="container">
@@ -103,7 +161,7 @@
 			<!-- End Email Header -->
 			
 			<!-- Start Email Body -->
-			<table cellpadding="0" cellspacing="0" border="0" id="bodyupper">
+			<table cellpadding="0" cellspacing="0" border="0" id="bodyupper" style="width: 695px;">
 				<tr>
 					<td style="width:22px">&nbsp;</td>
 					<td style="background-color: #F6F5F0;border-left: 2px solid #EAE8D7;border-right: 2px solid #EAE8D7;">
@@ -112,7 +170,7 @@
 						<table cellpadding="0" cellspacing="0" border="0" id="bodyupper_content" style="width: 650px;">
 							<tr>
 								<td style="width:35px;">&nbsp;</td>
-								<td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #777; line-height: 100%; height: 65px; vertical-align: top; border-left: 3px solid #4464CF; border-right: 4px solid #4464CF; padding: 0 30px 30px 30px; width: 570px;">
+								<td class="bodycontent" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #777; line-height: 100%; height: 65px; vertical-align: top; border-left: 3px solid #4464CF; border-right: 4px solid #4464CF; padding: 0 30px 30px 30px;">
 									Hi Jonathan,<br />
 									<br />
 									Jim Smith at CenterPoint Energy has been using an awesome free service for energy professionals, and wants you to <a href="#">join</a>.
@@ -121,7 +179,7 @@
 							</tr>
 							<tr>
 								<td style="width:35px;">&nbsp;</td>
-								<td style="vertical-align: top; border-left: 3px solid #4464CF; border-right: 4px solid #4464CF; padding: 0 30px 30px 30px; width: 509px;">
+								<td class="bodycontent" style="vertical-align: top; border-left: 3px solid #4464CF; border-right: 4px solid #4464CF; padding: 0 30px 30px 30px;">
 									<p style="text-align: center;"><a href="#"><img src="images/acceptinvite.gif" border="0" align="center" alt="Accept Invite"/></a></p>
 								</td>
 								<td style="width:39px">&nbsp;</td>
@@ -137,25 +195,25 @@
 			<table cellpadding="0" cellspacing="0" border="0" id="bodyupperfooter"><tr><td><img src="images/body_border_footer.gif" border="0" alt="" style="display:block;"/></td></tr></table>
 			
 			<!-- Body Lower -->
-			<table cellpadding="0" cellspacing="0" border="0" id="bodylower">
+			<table cellpadding="0" cellspacing="0" border="0">
 				<tr>
 					<td>
 						
 						<!-- Content Table -->
-						<table cellpadding="0" cellspacing="0" border="0">
+						<table cellpadding="0" cellspacing="0" border="0" id="bodylower" style="width: 695px;">
 							<tr>
 								<td style="width:22px">&nbsp;</td>
-								<td style="width: 650px; background-color: #F6F5F0; border-left: 2px solid #EAE8D7; border-right: 2px solid #EAE8D7; padding: 20px 0 20px 0;">
+								<td id="bodylowerinner" style="background-color: #F6F5F0; border-left: 2px solid #EAE8D7; border-right: 2px solid #EAE8D7; padding: 20px 0 20px 0;">
 
-									<table cellpadding="0" cellspacing="0" border="0" style="font-size: 16px; font-weight: bold; color: #777; height: 16px;">
+									<table id="features" cellpadding="0" cellspacing="0" border="0" style="font-size: 16px; font-weight: bold; color: #777; height: 16px;">
 										<tr>
 											<td style="width: 185px;">&nbsp;</td>
 											<td style="width: 34px; font-family: Arial, Helvetica, sans-serif;">BUY</td>
-											<td style="width: 30px; text-align: center; vertical-align: middle;"><img src="images/greendot.gif" border="0" align="center" /></td>
+											<td class="greendot" style="width: 30px; text-align: center; vertical-align: middle;"><img src="images/greendot.gif" border="0" align="center" /></td>
 											<td style="width: 42px; font-family: Arial, Helvetica, sans-serif;">SELL</td>
-											<td style="width: 30px; text-align: center; vertical-align: middle;"><img src="images/greendot.gif" border="0" align="center" /></td>
+											<td class="greendot" style="width: 30px; text-align: center; vertical-align: middle;"><img src="images/greendot.gif" border="0" align="center" /></td>
 											<td style="width: 44px; font-family: Arial, Helvetica, sans-serif;">POST</td>
-											<td style="width: 30px; text-align: center; vertical-align: middle;"><img src="images/greendot.gif" border="0" align="center" /></td>
+											<td class="greendot" style="width: 30px; text-align: center; vertical-align: middle;"><img src="images/greendot.gif" border="0" align="center" /></td>
 											<td style="width: 69px; font-family: Arial, Helvetica, sans-serif;">SEARCH</td>
 											<td>&nbsp;</td>
 										</tr>
@@ -172,7 +230,7 @@
 			<!-- End Email Body -->
 			
 			<!-- Start Footer Spacer -->
-			<table cellpadding="0" cellspacing="0" border="0" style="height: 8px; font-size: 1px;">
+			<table id="footerspacer" cellpadding="0" cellspacing="0" border="0" style="height: 8px; font-size: 1px;">
 				<tr>
 					<td>
 						<img src="images/footerspacer.gif" border="0" alt="" style="display: block;" />
@@ -182,11 +240,11 @@
 			<!-- End Footer Spacer -->
 			
 			<!-- Start Footer Body -->
-			<table cellpadding="0" cellspacing="0" border="0" id="footerbody">
+			<table cellpadding="0" cellspacing="0" border="0" id="footerbody" style="width: 695px;">
 				<tr>
 					<td style="width:22px">&nbsp;</td>
-					<td style="width: 650px; background-color: #F6F5F0; border-left: 2px solid #EAE8D7; border-right: 2px solid #EAE8D7; padding: 10px 0 20px 0;">
-						<p style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; text-align: center; line-height: 100%; font-weight: normal;">&#169; 2007-2013 Pricelock, Inc. Pricelock and its respective logos are the trademarks of Pricelock, Inc.<br />
+					<td style="background-color: #F6F5F0; border-left: 2px solid #EAE8D7; border-right: 2px solid #EAE8D7; padding: 10px 0 20px 0;">
+						<p style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; text-align: center; line-height: 14px; color: #777; font-weight: normal;">&#169; 2007-2013 Pricelock, Inc. Pricelock and its respective logos are the trademarks of Pricelock, Inc.<br />
 						All other marks are the property of their respective owners. <a href="http://www.pricelock.com/connect">www.pricelock.com/connect</a><br />
 						If you no longer wish to receive these emails, click on the following link: <a href="#">Unsubscribe.com</a></p>
 					</td>
