@@ -31,17 +31,29 @@
 		table[id=listing_details_header] {
 			width: 272px !important;
 			height: 23px !important;
-			background: url('images/listing_details_mobile.png') left top no-repeat !important;
+			background: url('images/new_listings_mobile.png') left top no-repeat !important;
 		}
 		table[id=listing_details] {
 			width: 272px !important;
 		}
-		table[id=listing_details_content] {
+		table[id=listing_details_content], table[id=listing_details_content2] {
 			width: 246px !important;
 		}
 		table[id=listing_details_content] td p, table[id=listing_details_content] td span, table[id=listing_details_content] td a {
 			display: inline-block;
 			width: 218px !important;
+		}
+		table[id=listing_details_content2] td p, table[id=listing_details_content2] td span, table[id=listing_details_content2] td a {
+			display: inline-block;
+			width: 218px !important;
+		}
+		table[id=new_members_header] img {
+			display: none !important;
+		}
+		table[id=new_members_header] {
+			width: 272px !important;
+			height: 23px !important;
+			background: url('images/new_members_mobile.png') left top no-repeat !important;
 		}
 		table[id=outro] {
 			width: 272px !important;
@@ -180,7 +192,7 @@
 			<!-- Start Pre Header -->
 			<table cellpadding="0" cellspacing="0" border="0" border="0" id="preheader" style="width: 669px; height: 20px;">
 				<tr>
-					<td style="font-family: Arial, Helvetica, sans-serif; text-align: left; color #58595B;">Things are happening on Pricelock Connect, don&#039;t miss out!</td>
+					<td style="font-family: Arial, Helvetica, sans-serif; text-align: left; color #58595B;">See the [##] listings of interest to you today</td>
 				</tr>
 			</table>
 			<!-- End Pre Header -->
@@ -199,9 +211,7 @@
 			<table cellpadding="0" cellspacing="0" border="0" id="message" style="width: 669px;">
 				<tr>
 					<td style="background-color: #FFF; padding-left: 32px; padding-right: 32px; padding-bottom: 30px; font-family: Arial, Helvetica, sans-serif; font-size: 14px;">
-						Hi Jonathan,<br />
-						<br />
-						Good news! CenterPoint Energy has a new <a href="#" style="font-weight: bold;">listing</a> to buy Ultra Low Sulfur Biodiesel.
+						Activity for [Date]
 					</td>
 				</tr>
 			</table>
@@ -209,7 +219,7 @@
 			<table cellpadding="0" cellspacing="0" border="0" id="listing_details_header" style="width: 669px;">
 				<tr>
 					<td style="background-color: #FFF; text-align: left;">
-						<img src="images/listing_details.gif" border="0" alt="" style="display:block;" align="left" />
+						<img src="images/new_listings.gif" border="0" alt="" style="display:block;" align="left" />
 					</td>
 				</tr>
 			</table>
@@ -221,17 +231,33 @@
 						<table id="listing_details_content" cellpadding="0" cellspacing="0" border="0" style="width: 643px; border: 1px solid #BBB;">
 							<tr>
 								<td style="padding: 13px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 20px;">
-									<p style="display:inline-block; width: 615px; color: #8DC44B; font-weight: bold;">CATEGORY: FUEL</p>
-									<p style="display: inline-block; width: 615px; height: 20px; padding-bottom: 15px;"><a href="#">[Buy | Sell] - [Product]</a></p>
-									<p style="display: inline-block; width: 615px;"><span style="font-style: italic; color: #A6A8AB;">Volume:</span> [volume]</p>
-									<p style="display: inline-block; width: 615px;"><span style="font-style: italic; color: #A6A8AB;">Delivery Point:</span> [deliver point]</p>
-									<p style="display: inline-block; width: 615px; padding-bottom: 15px;"><span style="font-style: italic; color: #A6A8AB;">Delivery Term:</span> [delivery term]</p>
-									<p style="display: inline-block; width: 615px; padding-bottom: 15px;"><span style="font-style: italic; color: #A6A8AB;">Description:</span> [Description]Sed ut perspiciatis unde omnis iste natus error sit volupt atem accusantium doloremque laudantium, totam rem aperiam, dfgh eaque...</p>
-									<p style="display: inline-block; width: 615px;"><span style="font-style: italic; color: #A6A8AB;">Contact Info:</span></p>
-									<p style="display: inline-block; width: 615px;">Company</p>
-									<p style="display: inline-block; width: 615px;">Name</p>
-									<p style="display: inline-block; width: 615px;">Phone #</p>
-									<p style="display: inline-block; width: 615px;">City, State</p>
+									<p style="display:inline-block; width: 615px; color: #8DC44B; font-weight: bold; padding-bottom: 15px;">[CATEGORY 1]</p>
+									<p style="display: inline-block; width: 615px; height: 20px;"><a href="#">[Product] - [Name] ([Company]) <i><img src="images/bluearrow.gif" alt="" border="0" style="border: none;" /></i></a></p>
+									<p style="display: inline-block; width: 615px;"><span style="font-style: italic; color: #A6A8AB;">[Buy or Sell]:</span> [Quantity]</p>
+									<p style="display: inline-block; width: 615px; padding-bottom: 15px;"><span style="font-style: italic; color: #A6A8AB;">Delivery Point:</span> [Delivery Point]</p>
+									<p style="display: inline-block; width: 615px; height: 20px;"><a href="#">[Product] - [Name] ([Company]) <i><img src="images/bluearrow.gif" alt="" border="0" style="border: none;" /></i></a></p>
+									<p style="display: inline-block; width: 615px;"><span style="font-style: italic; color: #A6A8AB;">[Buy or Sell]:</span> [Quantity]</p>
+									<p style="display: inline-block; width: 615px; padding-bottom: 15px;"><span style="font-style: italic; color: #A6A8AB;">Delivery Point:</span> [Delivery Point]</p>
+									<p style="display: inline-block; width: 615px; height: 20px;"><a href="#">[Product] - [Name] ([Company]) <i><img src="images/bluearrow.gif" alt="" border="0" style="border: none;" /></i></a></p>
+									<p style="display: inline-block; width: 615px;"><span style="font-style: italic; color: #A6A8AB;">[Buy or Sell]:</span> [Quantity]</p>
+									<p style="display: inline-block; width: 615px; padding-bottom: 15px;"><span style="font-style: italic; color: #A6A8AB;">Delivery Point:</span> [Delivery Point]</p>
+								</td>
+							</tr>
+						</table>
+						
+						<table id="listing_details_content2" cellpadding="0" cellspacing="0" border="0" style="margin-top: 15px; width: 643px; border: 1px solid #BBB;">
+							<tr>
+								<td style="padding: 13px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 20px;">
+									<p style="display:inline-block; width: 615px; color: #8DC44B; font-weight: bold; padding-bottom: 15px;">[CATEGORY 2]</p>
+									<p style="display: inline-block; width: 615px; height: 20px;"><a href="#">[Product] - [Name] ([Company]) <i><img src="images/bluearrow.gif" alt="" border="0" style="border: none;" /></i></a></p>
+									<p style="display: inline-block; width: 615px;"><span style="font-style: italic; color: #A6A8AB;">[Buy or Sell]:</span> [Quantity]</p>
+									<p style="display: inline-block; width: 615px; padding-bottom: 15px;"><span style="font-style: italic; color: #A6A8AB;">Delivery Point:</span> [Delivery Point]</p>
+									<p style="display: inline-block; width: 615px; height: 20px;"><a href="#">[Product] - [Name] ([Company]) <i><img src="images/bluearrow.gif" alt="" border="0" style="border: none;" /></i></a></p>
+									<p style="display: inline-block; width: 615px;"><span style="font-style: italic; color: #A6A8AB;">[Buy or Sell]:</span> [Quantity]</p>
+									<p style="display: inline-block; width: 615px; padding-bottom: 15px;"><span style="font-style: italic; color: #A6A8AB;">Delivery Point:</span> [Delivery Point]</p>
+									<p style="display: inline-block; width: 615px; height: 20px;"><a href="#">[Product] - [Name] ([Company]) <i><img src="images/bluearrow.gif" alt="" border="0" style="border: none;" /></i></a></p>
+									<p style="display: inline-block; width: 615px;"><span style="font-style: italic; color: #A6A8AB;">[Buy or Sell]:</span> [Quantity]</p>
+									<p style="display: inline-block; width: 615px; padding-bottom: 15px;"><span style="font-style: italic; color: #A6A8AB;">Delivery Point:</span> [Delivery Point]</p>
 								</td>
 							</tr>
 						</table>
@@ -240,18 +266,29 @@
 				</tr>
 			</table>
 			
-			<table cellpadding="0" cellspacing="0" border="0" id="outro" style="width: 669px;">
+			<table cellpadding="0" cellspacing="0" border="0" id="new_members_header" style="width: 669px;">
 				<tr>
-					<td style="display: block; background-color: #FFF; text-align: left; padding-left: 13px; padding-right: 13px; padding-bottom: 20px;">
+					<td style="background-color: #FFF; text-align: left;">
+						<img src="images/new_members.gif" border="0" alt="" style="display:block;" align="left" />
+					</td>
+				</tr>
+			</table>
+			
+			<table cellpadding="0" cellspacing="0" border="0" id="new_members" style="width: 669px;">
+				<tr>
+					<td style="background-color: #FFF; text-align: left; padding: 13px;">
 						
-						<table id="outro_split" cellpadding="0" cellspacing="0" border="0" style="width: 643px;">
+						<table id="new_members_content" cellpadding="0" cellspacing="0" border="0" style="width: 643px;">
 							<tr>
-								<td style="padding-left: 13px;">
-									<a href="#"><img src="images/view_listing.gif" border="0" alt="" style="display:block; border: 0;" align="left" border="0" /></a>
-								</td>
-								<td style="padding-left: 13px; padding-right: 13px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 20px;">
-									<a href="#" style="font-weight: bold;">Forward</a> this listing to someone else.<br />
-									Make sure your <a href="#" style="font-weight: bold;">interests</a> are set so you don&#039;t miss any listings.
+								<td style="padding: 13px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 20px;">
+									<p style="display: inline-block; width: 615px; padding-bottom: 10px;"><a href="#">N. Agarwal</a> (PL Trading, Podunk City, MO)</p>
+									<p style="display: inline-block; width: 615px; padding-bottom: 10px;"><a href="#">N. Falor</a> (Rohit Biodiesel &#038; Supply, City, MO)</p>
+									<p style="display: inline-block; width: 615px; padding-bottom: 10px;"><a href="#">J. Kang</a> (Makers Inc., City, MO)</p>
+									<p style="display: inline-block; width: 615px; padding-bottom: 10px;"><a href="#">V. Lee</a> (Lee Petroleum, City, MO)</p>
+									<p style="display: inline-block; width: 615px; padding-bottom: 10px;"><a href="#">N. Agarwal</a> (PL Trading, Podunk City, MO)</p>
+									<p style="display: inline-block; width: 615px; padding-bottom: 10px;"><a href="#">N. Falor</a> (Rohit Biodiesel &#038; Supply, City, MO)</p>
+									<p style="display: inline-block; width: 615px; padding-bottom: 10px;"><a href="#">J. Kang</a> (Makers Inc., City, MO)</p>
+									<p style="display: inline-block; width: 615px; padding-bottom: 10px;"><a href="#">V. Lee</a> (Lee Petroleum, City, MO)</p>
 								</td>
 							</tr>
 						</table>
