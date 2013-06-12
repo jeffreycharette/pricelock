@@ -70,13 +70,11 @@
 			width: 246px !important;
 		}
 		table[id=tagline_inner] td {
-			font-size: 13px !important;
+			font-size: 12px !important;
 		}
-		table[id=tagline_inner] td:first-child {
-			width: 40px !important;
-		}
-		table[id=tagline_inner] td:last-child {
-			width: 20px !important;
+		table[id=tagline_inner] span {
+			margin-left: 3px !important;
+			margin-right: 3px !important;
 		}
 		table[id=endofbody] img {
 			display: none !important;
@@ -92,8 +90,10 @@
 			width: 270px !important;
 		}
 		p[id=footer_body_content] {
-			margin: 0 !important;
-			width: 275px !important;
+			margin: 10px !important;
+			width: 250px !important;
+			font-size: 11px !important;
+			line-height: 125% !important;
 		}
 		
 		p[id=footer_body_content] .pipe {
@@ -102,6 +102,10 @@
 			height: 0;
 		}
 
+	}
+	
+	html {
+	    -webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
 	}
 	
 	body {
@@ -149,7 +153,7 @@
 </style>
 <![endif]-->
 </head>
-<body style="font-size: 12px; margin: 0; padding: 0; background-color: #C9C7BE;">
+<body style="font-size: 12px; margin: 0; padding: 0; background-color: #C9C7BE; -webkit-text-size-adjust: none !important;">
 <!-- Main Wrapper -->
 <!-- Start Container -->
 <table cellpadding="0" cellspacing="0" border="0" id="container">
@@ -198,17 +202,11 @@
 				<tr>
 					<td style="background-color: #1F1F1F; text-align: left; padding-left: 13px; padding-right: 13px; padding-bottom: 20px;">
 						
-						<table id="tagline_inner" cellpadding="0" cellspacing="0" border="0" style="width: 643px; border-top: 2px solid #606060; padding-top: 20px; letter-spacing: 2px;">
+						<table id="tagline_inner" cellpadding="0" cellspacing="0" border="0" style="width: 643px; border-top: 2px solid #606060; letter-spacing: 2px;">
 							<tr>
-								<td style="width: 185px;">&nbsp;</td>
-								<td style="width: 34px; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #555; font-weight: bold;">BUY</td>
-								<td class="greendot" style="width: 30px; text-align: center; vertical-align: middle;"><img src="images/greendot.gif" border="0" align="center" /></td>
-								<td style="width: 42px; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #555; font-weight: bold;">SELL</td>
-								<td class="greendot" style="width: 30px; text-align: center; vertical-align: middle;"><img src="images/greendot.gif" border="0" align="center" /></td>
-								<td style="width: 44px; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #555; font-weight: bold;">POST</td>
-								<td class="greendot" style="width: 30px; text-align: center; vertical-align: middle;"><img src="images/greendot.gif" border="0" align="center" /></td>
-								<td style="width: 69px; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #555; font-weight: bold;">SEARCH</td>
-								<td style="width: 184px;">&nbsp;</td>
+								<td style="padding-top: 20px; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #555; font-weight: bold;">
+									BUY<span style="color:#87BE49; margin-left: 10px; margin-right: 10px;">&bull;</span>SELL<span style="color:#87BE49; margin-left: 10px; margin-right: 10px;">&bull;</span>POST<span style="color:#87BE49; margin-left: 10px; margin-right: 10px;">&bull;</span>SEARCH
+								</td>
 							</tr>
 						</table>
 						
