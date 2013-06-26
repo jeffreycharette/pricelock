@@ -12,23 +12,43 @@
 		table[id=preheader] td {
 			text-align: center !important;
 		}
-		
+
+		table[id=introducing] {
+			width: 272px !important;
+			text-align: center !important;
+		}
+		table[id=introducing] div {
+			font-size: 24px !important;
+		}
+		table[id=intro] {
+			width: 272px !important;
+			text-align: center !important;
+		}
+		table[id=intro] div {
+			padding: 0 10px 0 10px;
+			font-size: 13px !important;
+		}
 		table[id=header] img {
 			display: none !important;
 		}
 		table[id=header] {
 			width: 272px !important;
-			height: 182px !important;
+			height: 126px !important;
 			background: url('images/header_mobile.gif') left top no-repeat !important;
 		}
 		
-		table[id=features] img {
-			display: none !important;
-		}
 		table[id=features] {
 			width: 272px !important;
-			height: 472px !important;
-			background: url('images/features_mobile.gif') left top no-repeat !important;
+			/*height: 472px !important;
+			background: url('images/features_mobile.gif') left top no-repeat !important;*/
+		}
+
+		table[id=features] td {
+			display: block !important;
+			width: 272px !important;
+			text-align: center !important;
+			/*height: 472px !important;
+			background: url('images/features_mobile.gif') left top no-repeat !important;*/
 		}
 		
 		table[id=content] {
@@ -94,7 +114,7 @@
 	}
 	
 	table#header {
-		height: 359px;
+		height: 273px;
 	}
 
 </style>
@@ -122,19 +142,47 @@
 			<!-- End Pre Header -->
 			
 			<!-- Start Email Header -->
+			<table cellpadding="0" cellspacing="0" border="0" border="0" id="introducing" style="width: 669px; background-color: #ffffff;">
+				<tr>
+					<td style="padding: 20px 0 10px 0; font-size: 40px; font-family: Arial, Helvetica, sans-serif; text-align: center; color #83B949;">
+						<div style="color: #83B949;">Introducing Pricelock Connect</div>
+					</td>
+				</tr>
+			</table>
+
+			<table cellpadding="0" cellspacing="0" border="0" border="0" id="intro" style="width: 669px; background-color: #ffffff;">
+				<tr>
+					<td style="padding: 0 0 10px 0; font-size: 18px; font-family: Arial, Helvetica, sans-serif; text-align: center; color #4B4845;">
+						<div style="color: #4B4845;">Find counterparties to buy and sell RECs,<br /> power, and energy commodities all in one place.</div>
+					</td>
+				</tr>
+			</table>
+
 			<table cellpadding="0" cellspacing="0" border="0" border="0" id="header" style="width: 669px;">
 				<tr>
 					<td>
-						<img src="images/header.gif" border="0" alt="" style="display:block; font-family: Arial, Helvetica, sans-serif; font-size: 37px; font-weight: 600; color: #84BB4B; text-align: center;" alt="Introducing Pricelock Connect"/>
+						<img src="images/header.gif" border="0" alt="" style="display:block; font-family: Arial, Helvetica, sans-serif; font-size: 37px; font-weight: 600; color: #84BB4B; text-align: center;" alt=""/>
 					</td>
 				</tr>
 			</table>
 			<!-- End Email Header -->
 			
-			<table cellpadding="0" cellspacing="0" border="0" border="0" id="features" style="width: 669px;">
+			<table cellpadding="0" cellspacing="0" border="0" border="0" id="features" style="width: 669px; background-color: #494542;">
 				<tr>
-					<td>
-						<img src="images/features.gif" border="0" alt="Transact - Connect - Jobs" style="display:block; font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: #84BB4B; text-align: center;" />
+					<td style="padding: 15px 0 15px 0; width: 33%; text-align: center;">
+						<img src="images/transact.gif" border="0" alt="" style="display:block; margin: 0 auto 10px auto;" />
+						<div style="font-size: 22px; font-family: Arial, Helvetica, sans-serif; text-align: center; color: #90C33E;">Transact</div>
+						<div style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: center; color: #ffffff;">RECs, NOx, SOx, GHG,<br />power, and energy needs.</div>
+					</td>
+					<td style="padding: 15px 0 15px 0; width: 34%; text-align: center;">
+						<img src="images/connect.gif" border="0" alt="" style="display:block; margin: 0 auto 10px auto;" />
+						<div style="font-size: 22px; font-family: Arial, Helvetica, sans-serif; text-align: center; color: #90C33E;">Connect</div>
+						<div style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: center; color: #ffffff;">Find producers, brokers, and users<br />of RECs, offset credits, and power.</div>
+					</td>
+					<td style="padding: 15px 0 15px 0; width: 33%; text-align: center;">
+						<img src="images/jobs.gif" border="0" alt="" style="display:block; margin: 0 auto 10px auto;" />
+						<div style="font-size: 22px; font-family: Arial, Helvetica, sans-serif; text-align: center; color: #90C33E;">Jobs</div>
+						<div style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; text-align: center; color: #ffffff;">Browse and post jobs<br />for your industry.</div>
 					</td>
 				</tr>
 			</table>
