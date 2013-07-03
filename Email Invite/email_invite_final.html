@@ -5,6 +5,13 @@
 <title>Pricelock v1</title>
 <style type="text/css">
 	@media only screen and (max-width: 480px) { 
+		table[id=preheader] {
+			margin-left: 8px !important;
+			width: 315px !important;
+		}
+		table[id=preheader] td {
+			text-align: center !important;
+		}
 		table[id=header] img {
 			display: none !important;
 		}
@@ -57,14 +64,21 @@
 		table[id=bodylower] td:last-child {
 			width: 5px !important;
 		}
-		table[id=features] td:first-child {
-			width: 34px !important;
+		table[id=features] {
+			width: 310px !important;
 		}
-		table[id=features] td:last-child {
-			width: 34px !important;
+		table[id=features] td:first-child {
+			font-size: 14px !important;
 		}
 		table[id=features] td.greendot {
 			width: 19px !important;
+		}
+		table[id=tagline_inner] {
+			width: 310px !important;
+			letter-spacing: 1px !important;
+		}
+		table[id=tagline_inner] td {
+			font-size: 12px !important;
 		}
 		table[id=footerspacer] img {
 			display: none !important;
@@ -91,6 +105,9 @@
 			width: 328px !important;
 			height: 14px !important;
 			background: url('http://raw.github.com/wearecharette/pricelock/master/Email%20Invite/images/footer_mobile.gif') left top no-repeat !important;
+		}
+		table[id=postfooter] {
+			width: 310px !important;
 		}
 	}
 	
@@ -145,6 +162,14 @@
 <table cellpadding="0" cellspacing="0" border="0" id="container">
 	<tr>
 		<td>
+
+			<!-- Start Pre Header -->
+			<table cellpadding="0" cellspacing="0" border="0" id="preheader" style="width: 670px; height: 20px; margin-left: 23px; margin-top: 23px;">
+				<tr>
+					<td style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: left; color #777;">You're invited to join Pricelock Connect</td>
+				</tr>
+			</table>
+			<!-- End Pre Header -->
 			
 			<!-- Start Email Header -->
 			<table cellpadding="0" cellspacing="0" border="0" border="0" id="header">
@@ -175,7 +200,7 @@
 							</tr>
 							<tr>
 								<td style="width:35px;">&nbsp;</td>
-								<td class="bodycontent" style="vertical-align: top; border-left: 3px solid #4464CF; border-right: 3px solid #4464CF; padding: 0 30px 30px 30px;">
+								<td class="bodycontent" style="vertical-align: top; border-left: 3px solid #4464CF; border-right: 3px solid #4464CF; border-bottom: 3px solid #4464CF;padding: 0 30px 30px 30px;">
 									<p style="text-align: center;"><a href="#"><img src="http://raw.github.com/wearecharette/pricelock/master/Email%20Invite/images/acceptinvite.gif" border="0" align="center" alt="Accept Invite"/></a></p>
 								</td>
 								<td style="width:39px">&nbsp;</td>
@@ -186,9 +211,6 @@
 					<td style="width:20px">&nbsp;</td>
 				</tr>
 			</table>
-			
-			<!-- Body Upper Footer -->
-			<table cellpadding="0" cellspacing="0" border="0" id="bodyupperfooter"><tr><td><img src="http://raw.github.com/wearecharette/pricelock/master/Email%20Invite/images/body_border_footer.gif" border="0" alt="" style="display:block;"/></td></tr></table>
 			
 			<!-- Body Lower -->
 			<table cellpadding="0" cellspacing="0" border="0">
@@ -201,17 +223,20 @@
 								<td style="width:23px">&nbsp;</td>
 								<td id="bodylowerinner" style="background-color: #F6F5F0; border-left: 1px solid #DBD7B6; border-right: 1px solid #DBD7B6; padding: 20px 0 20px 0;">
 
-									<table id="features" cellpadding="0" cellspacing="0" border="0" style="font-size: 16px; font-weight: bold; color: #777; height: 16px;">
+									<!-- Tagline -->
+									<table cellpadding="0" cellspacing="0" border="0" id="features" style="width: 650px;">
 										<tr>
-											<td style="width: 185px;">&nbsp;</td>
-											<td style="width: 34px; font-family: Arial, Helvetica, sans-serif;">BUY</td>
-											<td class="greendot" style="width: 30px; text-align: center; vertical-align: middle;"><img src="http://raw.github.com/wearecharette/pricelock/master/Email%20Invite/images/greendot.gif" border="0" align="center" /></td>
-											<td style="width: 42px; font-family: Arial, Helvetica, sans-serif;">SELL</td>
-											<td class="greendot" style="width: 30px; text-align: center; vertical-align: middle;"><img src="http://raw.github.com/wearecharette/pricelock/master/Email%20Invite/images/greendot.gif" border="0" align="center" /></td>
-											<td style="width: 44px; font-family: Arial, Helvetica, sans-serif;">POST</td>
-											<td class="greendot" style="width: 30px; text-align: center; vertical-align: middle;"><img src="http://raw.github.com/wearecharette/pricelock/master/Email%20Invite/images/greendot.gif" border="0" align="center" /></td>
-											<td style="width: 69px; font-family: Arial, Helvetica, sans-serif;">SEARCH</td>
-											<td>&nbsp;</td>
+											<td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #555; font-weight: bold;">
+
+												<table id="tagline_inner" cellpadding="0" cellspacing="0" border="0" style="width: 650px; letter-spacing: 2px;">
+													<tr>
+														<td style="padding-top: 20px; padding-bottom: 10px; text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #555; font-weight: bold;">
+															BUY<span style="color:#87BE49; margin-left: 10px; margin-right: 10px;">&bull;</span>SELL<span style="color:#87BE49; margin-left: 10px; margin-right: 10px;">&bull;</span>POST<span style="color:#87BE49; margin-left: 10px; margin-right: 10px;">&bull;</span>SEARCH
+														</td>
+													</tr>
+												</table>
+												
+											</td>
 										</tr>
 									</table>
 
@@ -252,6 +277,13 @@
 			<!-- Start Email Footer -->
 			<table cellpadding="0" cellspacing="0" border="0" id="footer"><tr><td><img src="http://raw.github.com/wearecharette/pricelock/master/Email%20Invite/images/footer.gif" border="0" alt="" style="display: block;" /></td></tr></table>
 			<!-- End Email Footer -->
+
+			<!-- Post Footer -->
+			<table cellpadding="0" cellspacing="0" border="0" id="postfooter" style="width: 670px; height: 20px; margin-left: 23px; margin-top: 23px;">
+				<tr>
+					<td style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: left; color #777;"></td>
+				</tr>
+			</table>
 			
 		</td>
 	</tr>
